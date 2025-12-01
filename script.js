@@ -13,12 +13,14 @@ console.log(biglietto);
 if(eta > 18 && eta < 65){
     const costoBiglietto = kilometri * biglietto;
 console.log(costoBiglietto);
+document.getElementById("costoBiglietto").innerHTML = costoBiglietto;
 
 }else if(eta < 18){
     const costoBiglietto = kilometri * biglietto;
-    const sconto = (costoBiglietto * 20) / 100;
+    const sconto = ((costoBiglietto * 20) / 100);
     const costoTot = costoBiglietto - sconto;
     console.log(costoTot);
+    document.getElementById("costoTot").innerHTML = costoTot;
 
 
 } else if ( eta > 65){
@@ -26,4 +28,8 @@ console.log(costoBiglietto);
     const sconto = (costoBiglietto * 40) / 100;
     const costoTot = costoBiglietto - sconto;
     console.log(costoTot);
+    document.getElementById("costoTot").innerHTML = costoTot;
 }
+
+document.getElementById("eta").innerHTML = eta;
+document.getElementById("kilometri").innerHTML = kilometri;
