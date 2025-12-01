@@ -17,7 +17,6 @@ console.log(costoBiglietto);
 }else if(eta < 18){
     const costoBiglietto = kilometri * biglietto;
     const sconto = (costoBiglietto * 20) / 100;
-    console.log(sconto);
     const costoTot = costoBiglietto - sconto;
     console.log(costoTot);
 
