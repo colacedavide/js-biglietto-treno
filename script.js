@@ -20,6 +20,7 @@ document.getElementById("costoBiglietto").innerHTML = costoBiglietto;
     const sconto = ((costoBiglietto * 20) / 100);
     const costoTot = costoBiglietto - sconto;
     console.log(costoTot);
+    document.getElementById("costoBiglietto").innerHTML = costoBiglietto;
     document.getElementById("costoTot").innerHTML = costoTot;
 
 
@@ -28,8 +29,10 @@ document.getElementById("costoBiglietto").innerHTML = costoBiglietto;
     const sconto = (costoBiglietto * 40) / 100;
     const costoTot = costoBiglietto - sconto;
     console.log(costoTot);
+    document.getElementById("costoBiglietto").innerHTML = costoBiglietto;
     document.getElementById("costoTot").innerHTML = costoTot;
 }
 
 document.getElementById("eta").innerHTML = eta;
+
 document.getElementById("kilometri").innerHTML = kilometri;
